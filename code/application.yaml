@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: grocery-service
+  #Database Configurations
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/grocery_management
+    username: root
+    password: Admin@123
+    
+server:
+  port: 8082
+      
+logging:
+  file:
+    name:  D:\grocery-management-system\logs\grocery-service.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB   
